@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Research interests and writing by Ikechukwu John Chukwu on AI security, privacy, and large language models.">
+    <title>Research &amp; Writing – Ikechukwu John Chukwu</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="top">
+        <a class="brand-link" href="index.html" aria-label="Ikechukwu John Chukwu, home">
+          <svg class="brand-mark" viewBox="0 0 40 44" aria-hidden="true" focusable="false">
+            <path d="M20 2 36 8v12c0 10-6.5 17-16 22C10.5 37 4 30 4 20V8l16-6Z" fill="currentColor" opacity=".14" />
+            <path d="M20 2 36 8v12c0 10-6.5 17-16 22C10.5 37 4 30 4 20V8l16-6Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" />
+            <rect x="13" y="19" width="14" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="2.5" />
+            <path d="M16 19v-3a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+            <circle cx="20" cy="24" r="1.25" fill="currentColor" />
+            <path d="M20 25v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="site-nav" aria-label="Main navigation">
+          <a href="index.html#about">About</a>
+          <a href="index.html#portfolio">Portfolio</a>
+          <a href="index.html#bace">BACE</a>
+          <a href="research.html" aria-current="page">Research</a>
+          <a href="https://john0100.wordpress.com/" target="_blank" rel="noopener noreferrer">Blog</a>
+          <a href="index.html#tools">Tools</a>
+          <a href="index.html#certifications">Certifications</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section>
+          <h1 class="page-title">Research &amp; Writing</h1>
+          <p class="research-intro">I write about AI security, privacy risks, and how large language models work. Here are some of my recent articles.</p>
+          <div class="research-list">
+            <article class="research-item">
+              <time datetime="2026-10-12">October 12, 2026</time>
+              <h2><a href="https://ikechukwujohnchukwu.substack.com/p/membership-inference-and-attribute" target="_blank" rel="noopener noreferrer">Membership Inference and Attribute Inference Attack</a></h2>
+            </article>
+            <article class="research-item">
+              <time datetime="2026-09-27">September 27, 2026</time>
+              <h2><a href="https://ikechukwujohnchukwu.substack.com/p/major-attack-surfaces-of-ai-agents" target="_blank" rel="noopener noreferrer">Major Attack Surfaces of AI Agents: Jailbreaking</a></h2>
+            </article>
+            <article class="research-item">
+              <time datetime="2026-09-13">September 13, 2026</time>
+              <h2><a href="https://ikechukwujohnchukwu.substack.com/p/how-llms-process-text-from-tokens" target="_blank" rel="noopener noreferrer">How LLMs Process Text: From Tokens to Embeddings</a></h2>
+            </article>
+            <article class="research-item">
+              <time datetime="2026-08-01">August 1, 2026</time>
+              <h2><a href="https://ikechukwujohnchukwu.substack.com/p/what-actually-happens-when-you-type" target="_blank" rel="noopener noreferrer">What Actually Happens When You Type a Prompt into an LLM?</a></h2>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <span>© 2026 Ikechukwu John Chukwu</span>
+        <a href="index.html">Back to portfolio</a>
+      </footer>
+    </div>
+    <script>
+      const navToggle = document.querySelector('.nav-toggle');
+      const siteNav = document.getElementById('site-nav');
+
+      if (navToggle && siteNav) {
+        navToggle.addEventListener('click', () => {
+          const isOpen = siteNav.classList.toggle('is-open');
+          navToggle.setAttribute('aria-expanded', String(isOpen));
+        });
+
+        siteNav.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            siteNav.classList.remove('is-open');
+            navToggle.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
